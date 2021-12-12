@@ -1,7 +1,7 @@
 body{
   background-color: aquamarine;
   font-family:monospace;
-
+  overflow-x: 10vw;
   word-wrap: break-word;
   display:block;
 }
@@ -10,6 +10,12 @@ header{
   background-color:paleturquoise;
   display:inline-block;
   width:100% ;
+}
+
+header p{
+  font-size:40px;
+  font-family: monospace;
+  padding-left: 5vw;
 }
 
 main{
@@ -38,11 +44,13 @@ footer{
   font-size:30px;
   padding:5px;
   margin:3px;
-  float: right;
+  float:right;
+  color:white;
+  background-color:lightgreen;
 }
 
 .major{
-  width:65%;
+  width:70%;
   background-color:white;
   float:left;
 }
@@ -54,16 +62,8 @@ footer{
 }
 
 #display-img{
-  width:30%;
   float:right;
-  margin: 1%;
-  border-radius: 100vh;
-}
-
-header h1{
-  font-size:40px;
-}
-
-header h2{
-  font-size:40px;
+  margin-right: 5vw;
+  margin-bottom: 0px;
+  width:30%;
 }
