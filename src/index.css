@@ -1,9 +1,8 @@
 body{
-  background-color: aquamarine;
+  background-color: paleturquoise;
   font-family:monospace;
-  overflow-x: 10vw;
-  word-wrap: break-word;
-  display:block;
+  word-wrap:break-word;
+  display:inline-block;
 }
 
 header{
@@ -15,12 +14,20 @@ header{
 header p{
   font-size:40px;
   font-family: monospace;
-  padding-left: 5vw;
+  padding-left: 9vw;
+}
+
+#display-img{
+  float:right;
+  margin-right: 5vw;
+  margin-bottom: 0px;
+  width:30%;
 }
 
 main{
+  display:flex;
   background-color:lightyellow;
-  height:100vh;
+  height:100%;
 }
 
 footer{
@@ -33,37 +40,119 @@ footer{
 }
 
 .navbar{
-  background-color:lightcoral;
-  float:right;
-  width:100%;
+  background-color:#f08080;
+  width:70%;
+  margin:auto;
+  padding:0vw 3px;
+  display:flex;
+  justify-content:space-around;
 }
 
 .nav-button{
-  font-family:serif;
+  font-family:sans-serif;
   border: 0cm;
-  font-size:30px;
+  font-size: 2em;
   padding:5px;
-  margin:3px;
-  float:right;
   color:white;
-  background-color:lightgreen;
+  background-color:transparent;
 }
 
 .major{
-  width:70%;
   background-color:white;
   float:left;
+  padding: 1vw 2vw 1vw 2vw;
+  font-size:1.5vw;
 }
 
 .minor{
-  width:30%;
+  width:15%;
   background-color: lightcyan;
   float:right;
+  padding: 1vw 2vw 1vw 2vw;
 }
 
-#display-img{
-  float:right;
-  margin-right: 5vw;
-  margin-bottom: 0px;
+.major p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#section-header{
+  font-size:3em;
+  font-weight:200;
+  text-decoration: underline;
+  margin-bottom:-1vw;
+  margin-top: -.3vw;
+}
+
+.project {
+  margin-top: 1vw;
+  margin-bottom:vw;
+  display:flex;
+  flex-direction:column;
+}
+
+.card{
+  width:90%;
+  background-color: lightgray;
+  padding: 1vw;
+  margin: .5vw;
+  margin-top:1vw;
+  border-radius:2vw;
+  box-shadow:dimgray .3vw .3vw 0vw 0vw;
+}
+
+.card-img{
   width:30%;
+  float:left;
+  padding-right: 1vw;
+  margin: 0vw;
+  padding: 0vw;
+}
+
+.card-img img{
+  width:90%;
+  border-radius:2vw;
+  margin: 0vw;
+  padding: 0vw;
+}
+
+.card-data{
+  width:70%;
+  float:right;
+  margin: 0vw;
+  padding: 0vw;
+}
+
+.skill{
+    display:flex;
+    flex-direction:column;
+}
+
+.line {
+  width:auto;
+  background-color: lightgray;
+  padding: 0vw 1vw;
+  margin: .5vw;
+  margin-top:1vw;
+  border-radius:.5vw;
+  box-shadow:dimgray .3vw .3vw 0vw 0vw;
+}
+
+.line-data{
+  width:100%;
+  margin: 0vw;
+  padding: 0vw;
+}
+
+
+.resume embed{
+  min-height: 100vh;
+}
+
+.resume button{
+  border: 0px;
+  background-color:lightgray;
+  padding: 1vw;
+  margin-bottom:1vw;
+  float: right;
+  border-radius: 1vw;
 }

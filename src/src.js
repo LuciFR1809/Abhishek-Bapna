@@ -1,5 +1,5 @@
 setInterval(hello,2000);
-setInterval(desig,3500);
+setInterval(desig,2000);
 
 const hellos=['Hello','Hi','Wassup','Hola','Bonjour',' 你好',
             '안녕하세요','Guten Tag',' नमस्ते',' γεια σας','السلام علیکم',
