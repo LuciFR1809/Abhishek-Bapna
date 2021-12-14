@@ -27,13 +27,12 @@ function desig(){
 
 const eyes = document.querySelectorAll('.iris');
 window.addEventListener("mousemove", (event) => {
-    const x = -(window.innerWidth / 2 - event.pageX) / 35;
-    const y = -(window.innerHeight / 2 - event.pageY) / 35;
+    const x = -Math.max((window.innerWidth / 2 - event.pageX),-window.innerWidth) / 35;
+    const y = -Math.max((window.innerHeight / 2 - event.pageY),-window.innerHeight) / 35;
     eyes.forEach(eye => {eye.style.transform = `rotate(-45deg) translateY(${y}px) translateX(${x}px)`;})
 });
 
 document.addEventListener("mouseleave",(event) => {
-//alert('you are out');
     const y=window.innerHeight/35-10;
     const x=0;
     eyes.forEach(eye => {eye.style.transform=`rotate(-45deg) translateY(${y}px) translateX(${x}px)`;})
