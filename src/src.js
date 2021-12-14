@@ -19,8 +19,22 @@ const desigs=['A Software Developer <span class="emoji">💻</span>','A Coder <s
             'A Beach Bum <span class="emoji">🌴</span>','A Ravenclaw <span class="emoji">🦅</span>','A Hustler <span class="emoji">💪🏻</span>',
             'The Pirate King <span class="emoji">🏴‍☠️</span>','A Water Type Gym Leader <span class="emoji">💧</span>','A Son Of Poseidon <span class="emoji">🌊</span>',
             'A Water Bender <span class="emoji">🏄🏻‍♂️</span>','A History Nut <span class="emoji">🦕</span>','A Certified Foodie <span class="emoji">👨🏻‍🍳</span>'
-            ,'A Theatre Weirdo <span class="emoji">🎭</span>','A Proud Indian <span class="emoji">🇮🇳</span>'];
+            ,'A Theatre Weirdo <span class="emoji">🎭</span>','A Proud Indian <span class="emoji">🇮🇳</span>','Professional Binger <span class="emoji">🍿</span>'];
 const desigLen=desigs.length;
 function desig(){
     document.getElementById("designation").innerHTML=desigs[Math.floor(Math.random() * desigLen)]
 };
+
+const eyes = document.querySelectorAll('.iris');
+window.addEventListener("mousemove", (event) => {
+    const x = -(window.innerWidth / 2 - event.pageX) / 35;
+    const y = -(window.innerHeight / 2 - event.pageY) / 35;
+    eyes.forEach(eye => {eye.style.transform = `rotate(-45deg) translateY(${y}px) translateX(${x}px)`;})
+});
+
+document.addEventListener("mouseleave",(event) => {
+//alert('you are out');
+    const y=window.innerHeight/35-10;
+    const x=0;
+    eyes.forEach(eye => {eye.style.transform=`rotate(-45deg) translateY(${y}px) translateX(${x}px)`;})
+});
