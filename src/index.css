@@ -52,6 +52,7 @@ main{
   padding:5px;
   color:white;
   background-color:transparent;
+  cursor: pointer;
 }
 
 
