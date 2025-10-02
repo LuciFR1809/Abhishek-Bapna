@@ -3,6 +3,7 @@ body{
   font-family:monospace;
   word-wrap:break-word;
   display:block;
+  margin: 30px;
 }
 
 header{
@@ -45,12 +46,17 @@ main{
 }
 
 .nav-button{
-  font-family:sans-serif;
+  font-family: "Alan Sans";
   border: 0cm;
   font-size: 2em;
   padding:5px;
   color:white;
   background-color:transparent;
+  cursor: pointer;
+}
+.nav-button:hover {
+  color: rgb(255, 215, 140);
+  transition: 0.5s;
 }
 
 
@@ -213,6 +219,7 @@ main{
 footer{
   background-color:lightseagreen;
   text-align:center;
+  padding: 30px;
   font-size:1.5vw;
 }
 
